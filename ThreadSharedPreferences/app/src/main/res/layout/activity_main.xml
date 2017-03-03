@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nanterre.thread.MainActivity">
+
+    <ListView
+        android:id="@+id/listImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAdd" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/buttonAdd"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_motmagique"
+        android:layout_above="@+id/listImage"
+        android:layout_toEndOf="@+id/buttonAdd" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_saveMotMagique"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/editText_motmagique"
+        android:layout_alignBottom="@+id/editText_motmagique"
+        android:layout_toEndOf="@+id/editText_motmagique" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/editText_savedText"
+        android:layout_alignTop="@+id/editText_motmagique" />
+
+</RelativeLayout>
